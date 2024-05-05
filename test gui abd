@@ -1,0 +1,35 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Abd test", "BloodTheme")
+local Tab = Window:NewTab("Main")
+local Section = Tab:NewSection("Section Name")
+Section:NewButton("InfHeal", "ButtonInfo", function()
+    while wait(0) do
+
+for i,v in pairs(game.Players:GetPlayers()) do
+    game:GetService("ReplicatedStorage").Heal:FireServer(game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame, game.Players.LocalPlayer.Character.Humanoid.MaxHealth+game.Players.LocalPlayer.Character.Humanoid.Health, 0.1, game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.LookVector*100+Vector3.new(0,20,0), "rbxassetid://241837157", 1, Color3.new(5, 125, 0), "rbxassetid://4137216950", 1, 0)
+wait(0)
+end
+end
+end)
+
+Section:NewButton("NoCooldown", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/hanzakun/Roblox-Scripts/main/Doomspire%20Brickbattle.lua"))()
+end)
+
+Section:NewButton("TP Items", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/100degress/abd-tp-items-/main/tp%20items%20abd"))();
+end)
+
+local Tab = Window:NewTab("Others")
+local Section = Tab:NewSection("Section Name")
+Section:NewButton("Krnl Dark dex", "ButtonInfo", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/Babyhamsta/RBLX_Scripts/main/Universal/BypassedDarkDexV3.lua', true))()
+end)
+
+Section:NewButton("Adonis Bypass", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Pixeluted/adoniscries/main/Source.lua",true))()
+end)
+
+Section:NewButton("Simple RSPY", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/78n/SimpleSpy/main/SimpleSpySource.lua"))()
+end)
