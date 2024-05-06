@@ -19,6 +19,9 @@ end)
 Section:NewButton("TP Items", "ButtonInfo", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/100degress/abd-tp-items-/main/tp%20items%20abd"))();
 end)
+Section:NewButton("Auto Banknotes", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Bebo-Mods/BeboScripts/main/StandAwekening.lua"))()
+end)
 
 local Tab = Window:NewTab("Others")
 local Section = Tab:NewSection("Section Name")
@@ -32,4 +35,12 @@ end)
 
 Section:NewButton("Simple RSPY", "ButtonInfo", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/78n/SimpleSpy/main/SimpleSpySource.lua"))()
+end)
+
+Section:NewButton("infinity yield", "ButtonInfo", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+
+Section:NewKeybind("KeybindText", "KeybindInfo", Enum.KeyCode.J, function()
+	Library:ToggleUI()
 end)
